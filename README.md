@@ -19,33 +19,35 @@ RAG-PDFChat is an advanced AI-powered chatbot that enables context-aware questio
 │── 📜 chat_memory.py  # Manages multi-turn chat history
 │── 📁 data/  # Stores uploaded PDFs
 │── 📁 models/  # (Optional) LLM fine-tuning files
-⚙️ Installation & Setup
-1️⃣ Install Dependencies
+
+3. Installation & Setup
+i] Install Dependencies
 Ensure you have Python 3.8+, then run:
 pip install -r requirements.txt
 
-2️⃣ Set Up Environment Variables
+ii] Set Up Environment Variables
 Create a .env file and add your API keys:
 OPENAI_API_KEY="your-api-key-here"
 HF_TOKEN="your-huggingface-token-here"
 
-3️⃣ Run the Application
+iii] Run the Application
 python app.py
 Or, if using Streamlit UI:
 streamlit run app.py
 
-4️⃣ Upload a PDF & Start Chatting!
+iv] Upload a PDF & Start Chatting!
 Upload a PDF document
 Enter your Groq API Key
 Ask questions & get AI-generated responses
-🔹 How It Works
-1️⃣ PDF Ingestion → Extracts text using PyPDFLoader
-2️⃣ Text Chunking & Embedding → Splits text into 5,000-character chunks & encodes them with Hugging Face embeddings
-3️⃣ Vector Storage & Retrieval → Stores embeddings in ChromaDB and retrieves relevant chunks
-4️⃣ LLM-Powered Q&A → Uses Groq API (Gemma-2B-IT) to generate responses
-5️⃣ Chat Memory Management → Retains previous messages for contextual multi-turn conversations
 
-🛠 Technologies Used
+4. How It Works
+1️ PDF Ingestion → Extracts text using PyPDFLoader
+2️ Text Chunking & Embedding → Splits text into 5,000-character chunks & encodes them with Hugging Face embeddings
+3️ Vector Storage & Retrieval → Stores embeddings in ChromaDB and retrieves relevant chunks
+4️ LLM-Powered Q&A → Uses Groq API (Gemma-2B-IT) to generate responses
+5️ Chat Memory Management → Retains previous messages for contextual multi-turn conversations
+
+5. Technologies Used
 Category	Technologies
 Programming :	Python, Streamlit
 LLMs & Embeddings : 	Groq API (Gemma-2B-IT), Hugging Face Embeddings
@@ -53,13 +55,13 @@ Retrieval & Storage : LangChain, ChromaDB, Recursive Text Splitters
 Document Processing : PyPDFLoader
 Prompt Engineering : Context-aware question formulation, response optimization
 
-🚀 Future Enhancements
+6. Future Enhancements
 🔹 Multi-PDF Querying → Ask questions across multiple documents
 🔹 Hybrid Search (BM25 + Vector Search) → Improve retrieval accuracy
 🔹 Cloud Deployment (AWS/GCP) → Make the app scalable
 🔹 Fine-Tuned Models for Domain-Specific Use Cases
 
-📜 License
+7. License
 This project is open-source under the MIT License.
 
-💡 Want to improve this project? Fork it, experiment, and contribute! 🚀🔥
+Want to improve this project? Fork it, experiment, and contribute! 🚀🔥
