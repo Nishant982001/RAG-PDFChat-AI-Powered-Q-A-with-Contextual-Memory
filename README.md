@@ -10,9 +10,6 @@ RAG-PDFChat is an advanced AI-powered chatbot that enables context-aware questio
 ✅ Optimized with advanced prompt engineering for high-quality responses
 
 📂 Project Structure
-bash
-Copy
-Edit
 📁 RAG-PDFChat
 │── 📜 README.md
 │── 📜 requirements.txt
@@ -25,30 +22,18 @@ Edit
 ⚙️ Installation & Setup
 1️⃣ Install Dependencies
 Ensure you have Python 3.8+, then run:
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
+
 2️⃣ Set Up Environment Variables
 Create a .env file and add your API keys:
-
-ini
-Copy
-Edit
 OPENAI_API_KEY="your-api-key-here"
 HF_TOKEN="your-huggingface-token-here"
+
 3️⃣ Run the Application
-bash
-Copy
-Edit
 python app.py
 Or, if using Streamlit UI:
-
-bash
-Copy
-Edit
 streamlit run app.py
+
 4️⃣ Upload a PDF & Start Chatting!
 Upload a PDF document
 Enter your Groq API Key
@@ -62,11 +47,12 @@ Ask questions & get AI-generated responses
 
 🛠 Technologies Used
 Category	Technologies
-Programming	Python, Streamlit
-LLMs & Embeddings	Groq API (Gemma-2B-IT), Hugging Face Embeddings
-Retrieval & Storage	LangChain, ChromaDB, Recursive Text Splitters
-Document Processing	PyPDFLoader
-Prompt Engineering	Context-aware question formulation, response optimization
+Programming :	Python, Streamlit
+LLMs & Embeddings : 	Groq API (Gemma-2B-IT), Hugging Face Embeddings
+Retrieval & Storage : LangChain, ChromaDB, Recursive Text Splitters
+Document Processing : PyPDFLoader
+Prompt Engineering : Context-aware question formulation, response optimization
+
 🚀 Future Enhancements
 🔹 Multi-PDF Querying → Ask questions across multiple documents
 🔹 Hybrid Search (BM25 + Vector Search) → Improve retrieval accuracy
