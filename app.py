@@ -22,7 +22,7 @@ os.environ['HF_TOKEN'] = os.getenv("HF_TOKEN")
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 ## Set up streamlit app
-st.title("RAG-ChatPDF: AI-Powered Q&A with Memory & Context")
+st.title("RAG-PDFChat-AI-Powered-Q-A-with-Contextual-Memory")
 st.write("Uplaod Pdf's and chat with their content")
 
 ## Input the Groq API key
