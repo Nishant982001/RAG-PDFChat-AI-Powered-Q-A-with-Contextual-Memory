@@ -14,7 +14,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
 import os
-import chromadb.api
+import chromadb
 
 chromadb.api.client.SharedSystemClient.clear_system_cache()
 
