@@ -16,7 +16,7 @@ from langchain_community.document_loaders import PyPDFLoader
 import os
 import chromadb
 
-chromadb.api.client.SharedSystemClient.clear_system_cache()
+# chromadb.api.client.SharedSystemClient.clear_system_cache()
 
 from dotenv import load_dotenv
 load_dotenv()
