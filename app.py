@@ -137,10 +137,10 @@ if api_key:
                 for word in response['answer'].split(" "):
                     yield word + " "
                     time.sleep(0.02)
-            st.write(st.session_state.store)
+            # st.write(st.session_state.store)
             st.write(f"Assistant as {model} : \n")
             st.write_stream(stream_data)
-            st.write("Chat History: ", session_history.messages)
+            # st.write("Chat History: ", session_history.messages)
 
 else:
     st.warning("Please enter the Groq api Key")
