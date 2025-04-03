@@ -20,7 +20,7 @@ chromadb.api.client.SharedSystemClient.clear_system_cache()
 
 from dotenv import load_dotenv
 load_dotenv()
-
+#setting up the environment
 os.environ['HF_TOKEN'] = os.getenv("HF_TOKEN")
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
